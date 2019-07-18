@@ -8,7 +8,7 @@ class App < Sinatra::Base
   get '/name' do 
     # @name = Name.all
     # erb :'name/index.html.erb'
-    body = "My name is "
+    write = "My name is "
     status = 200
   end
   
