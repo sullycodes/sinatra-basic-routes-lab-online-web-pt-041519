@@ -6,7 +6,10 @@ class App < Sinatra::Base
   end
   
   get '/name' do 
-    "My name is "
+    @name = Name.all
+ 
+    erb :'name/index.html.erb'
+    "My name is #{@name}"
     status = 200
   end
   
