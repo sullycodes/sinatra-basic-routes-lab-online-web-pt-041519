@@ -6,7 +6,7 @@ class App < Sinatra::Base
   end
   
   get '/name' do 
-    "My name is "
+    "My name is \_\_"
     status = 200
   end
   
