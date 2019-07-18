@@ -9,7 +9,7 @@ class App < Sinatra::Base
     @name = Name.all
  
     erb :'name/index.html.erb'
-    "My name is #{@name}"
+    # "My name is #{@name}"
     status = 200
   end
   
