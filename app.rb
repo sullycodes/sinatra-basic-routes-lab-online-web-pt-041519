@@ -5,10 +5,8 @@ class App < Sinatra::Base
     "Hello, World!"
   end
   
-  get '/name' do 
-    # @name = Name.all
-    # erb :'name/index.html.erb'
-    write = "My name is "
+  get '/name' do |name|
+    "My name is #{name}"
     status = 200
   end
   
